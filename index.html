@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jacob Kolster's Professional Website</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+  <style>
+    a {
+        color :#264653;
+    }
+
+    body {
+      background: #264653;
+      color: #000000;
+      font-family: sans-serif, cursive;
+      margin: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .container {
+      width: 800px;
+      margin: 20px auto;
+      background: #2a9d8F;
+      border: 3px solid #e9c46a;
+      padding: 20px;
+    }
+
+    header {
+      background: #264653;
+      padding: 20px;
+      text-align: center;
+      border: 3px solid #e9c46a;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+      color: #f29849;
+    }
+
+    .section {
+      background: #ffd761;
+      padding: 20px;
+      margin: 20px 0;
+      border: 3px solid #e9c46a;
+    }
+
+    .section h2 {
+      color: #f29849;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #a16633;
+    }
+
+    .project {
+      background: #2a9d8F;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #e9c46a;
+    }
+
+    .marquee {
+      background: #264653;
+      padding: 10px;
+      color: #FFFFFF;
+      margin: 20px 0;
+    }
+
+    .blink {
+      animation: blink 3s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      60% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    mark {
+	    background-color: #f29849;
+    }
+
+    img {
+      border: 3px solid #f4a261;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jacob Kolster</h1>
+      <div class="blink"> <span style="color:#FFFFFF">Welcome to my Personal Website!</span></div>
+    </header>
+
+    <marquee class="marquee">✨ <span style="color:#FFFFFF">Thanks for visiting my website! Email me at: kolsterj2@gmail.com ✨</span></marquee>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQGCkKyMs2J5dw/profile-displayphoto-shrink_400_400/B56ZRcPfG_HQAg-/0/1736714351405?e=1742428800&v=beta&t=LRlftcEz0kxRxXRwG6gI1t1JSkJJTNDHXWC4B856j5M" alt="Your Photo" height=150px width=150px align="right">
+      <p>Hello! I'm a Computer Science Student and Class Encore Leader at the University of Oregon. I'm very versed in Python and C/C++ with experience in machine learning, backend development, and database design.<br></br> I love working with ML and NLP!</p>
+      <p>Skills: Python, C/C++, Linux, Node.js, Express.js, SQL, HTML, CSS, JavaScript, Latex and more!</p>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="project">
+	<img src="./imgs/User_Items_Table.png" alt="No Picture" height=150px width=175px align="right" >
+        <h3>Movie Reccommendation System <span>(ML/Collaborative Filtering)</span></h3>
+        <p>Using the MovieLens dataset, I worked with a teammate to build an machine learning algorithm that approximates how users would rate movies, based on how other users with similar tastes have rated them. Through estimating these ratings, we implemented a reccomendation system to reccommend a user new movies. This model can be generalized across any data stored in user-items fasion.</p>
+      </div>
+      <div class="project">
+	<img src="./imgs/Stock_App_Home.png" alt="No Picture" height=175px width=300px align="right">
+	<h3>Stock Papertrading Application</h3>
+	<p>An easy to use trading platform for newbies that I created in a group project!</p>
+	<p>I collaborated with a couple developers to make a simple, easy-to-use application. This project aims to limit the complexities of traditional trading that many inexperienced beginners face when starting. Through construcing a backend and database architecture, I supported fundamental functionality, such as signin-up, managing a portfolio, and supervising a stock watchlist.</p>
+      </div>
+      <div class="project">
+	<img src="./imgs/Track_Indicator_GUI.png" alt="No Picture" height=175px width=300px align="right">
+        <h3>Spotify Track Popularity GUI</h3>
+        <p>A fun and accessible data visualization & user interface project</p>
+	<p>Here I leveraged Spotify's Web API to create an interesting GUI capable of displaying dynamic data. Through following a simple pipelined process, users can enter a Spotify artist and receive a graph containing the artists most popular albums. Within each album, tracks are rated by popularity on Spotify's 0-100 scale.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <div class="project">
+        <h3>Class Encore Leader</h3>
+        <p>Sept. 2023 - Present</p>
+	<p style="margin-left:20px">Through working as a Class Encore Leader (Group Tutor/TA), I've had the fulfilling task of facilitating computer science students in acheiving a solid education by creating and hosting group study sessions. Through leading these sessions, I've gained excellent communication skills. Additionally, the responsibility of aiding in visualizing and breaking down complex concepts has benefitted my own understanding of computer science fundamentals.</p>
+      </div>
+
+      <div class="project">
+        <h3>Lifeguard & Swim Instructor</h3>
+        <p>Summers of 2020, 2021 & 2022</p>
+        <p style="margin-left:20px">Working as a lifeguard, I assumed the important duties of enforcing safety regulations, and as a swim instructor, I also was able to apply my swimming experience toward helping beginner and intermediate swimmers develop technical skills. Through being apart of a coordinated team I got a lot of experience in communication and assuming leadership roles within a stressful work environment where this was prioritized. With the priviledge of helping kids and ensuring safety, I happily committed myself towards supporting an efficient and welcoming work environment.</p>
+      </div>
+    </div>
+
+    <!-- Resume Section-->
+    <div class="section">
+    <h2>Resume</h2>
+    <hr></hr>
+    <h3>Education</h3>
+    <p>University of Oregon, Computer Science B.S., Mathematics Minor, AI/ML Concentration (June 2025)</p>
+    <ul>
+	<li>Out-of-State Summit Scholarship - Awarded for 3.90+ High School GPA</li>
+	<li>Seal of Biliteracy in Spanish</li>
+	<li>IB Diploma Awardee & IB Diploma Scholarship Recipient</li>
+    </ul>
+    <h3>Coursework</h3>
+    <p> Intro. to AI, Algorithms, Operating Systems, Interim. Data Structures, Database Processing, Computer Organization, Discrete Mathematics I->II, Calculus I->III, Computer Science I->III, and Intro. to Web Programming </p>
+    <h3>Projects</h3>
+     
+    <p><u>Movie Reccomendation System</u> - Python, Pandas, SciPy</p>
+	<ul>
+	  <li>Approximated existing user ratings, based on ratings of other users with similar tastes</li>
+	  <li>Implemented a machine learning reccomendation system using the Alternating Least Squares (ALS) model</li>
+	  <li>Organized large data (25 million ratings) to train the model efficiently</li>
+	</ul>
+    
+	<p><u>Stock Papertrading Application</u> - Node.js, Express.js, Javsacript, PostgreSQL</p>
+	<ul>
+	  <li>Created a backend and database architecture for managing portfolios and watchlists</li>
+	  <li>Designed independent and modular backend REST API with Node.js and Express.js</li>
+	  <li>Streamlined real-time stock data with Alpha Vantage's API</li>
+	</ul>
+
+	<p><u>Spotify Track Popularity Indicator</u> - Python, Tkinter, Seaborne (Matplotlib), Spotify Web API</p>
+	<ul> 
+	  <li>Python-powered GUI displaying dynamic data visualization of a prompted Spotify artist's top albums</li>
+	  <li>Engineered modular structure with OOP to create GUI class with accessible functionality</li>
+	  <li>Strategically limited RESTful API calls to enhance efficiency</li>
+	</ul>
+    
+    <h3>Skills</h3>
+    <ul>
+      <li><u>Programming</u> - Python, C/C++, SQL, Node.js, Express.js, React, Javascript, HTML, CSS, C#, and Latex</li>
+      <li><u>Operating Systems</u> - Linux/Unix</li>
+      <li><u>Mathematics</u> - Discrete Math 2, Calculus 3, Linear Algebra, and Statistics</li>
+    </ul>
+    <h3>Work Experience</h3>
+    <hr></hr>
+      
+        <h3>Class Encore Leader</h3>
+	<p>Sept. 2023 - Present</p>
+	<ul>
+	  <li>Curated weekly sessions and material for students to get hands-on experience with relevant class concepts</li>
+	  <li>Simplified complex concepts with communication and teaching, while providing support with well-constructed coding-problems</li>
+	  <li>Adapted teaching methods to assist individuals' needs</li>
+	</ul>
+      
+      
+	<h3>Lifeguard & Swim Instructor</h3>
+	<p>Summers of 2020, 2021 & 2022</p>
+	<ul>                                                                                                                      <li>Led a team to exceed operational goals, ensuring the safety and satisfaction of up to 80 patrons</li>
+	    <li>Facilitated clear and effective communication between staff and patrons</li>
+          <li>Provided exceptional customer service</li>
+        </ul>
+       
+    </div>
+
+
+    <div class="section">
+      <h2>Honors & Awards</h2>
+      <ul>
+        <li>UO Out-of-State Summit Scholarship</li>
+        <li>California State Seal of Biliteracy (Español)</li>
+        <li>IB Diploma Awardee</li>
+        <li>UO IB Scholarship</li>
+        <li>Gibbs Scholarship</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact Me</h2>
+      <p><mark>📧 <b>Email:</b> kolsterj2@gmail.com</mark></p>
+      <p><mark>🔗 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/jacob-kolster-023346298/" target="_blank">https://www.linkedin.com/in/jacob-kolster-023346298/</a></mark></p>
+      <p><mark>🔧 <b>Github:</b> <a href="https://github.com/Jake130" target="_blank">https://github.com/Jake130</a></mark></p>
+    </div>
+
+    <!--<div class="counter">
+      Visitors: 000012345
+      <br>
+      <img src="/api/placeholder/88/31" alt="Hit Counter">
+    </div>-->
+  </div>
+</body>
+</html>
