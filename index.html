@@ -13,7 +13,8 @@
       color: #000000;
       font-family: sans-serif, cursive;
       margin: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+      /* background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
+      /* future design???? background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 450'><defs><pattern id='hexDots' width='40' height='34.64' patternUnits='userSpaceOnUse'><circle cx='20' cy='10' r='4' fill='%23ffffff'/><circle cx='0' cy='27.32' r='4' fill='%23ffffff'/><circle cx='40' cy='27.32' r='4' fill='%23ffffff'/></pattern></defs><rect width='100%' height='100%' fill='%231f2a36'/><rect width='100%' height='100%' fill='url(%23hexDots)'/></svg>");*/
     }
 
     .container {
@@ -104,6 +105,13 @@
 
     <div class="section">
       <h2>Projects</h2>
+
+      <div class="project">
+        <img src="./imgs/GPT_Output.jpg" alt="No Picture" height=250px width=275px align="right" >
+        <h3>Implementation of GPT w/BPE</h3>
+        <p>I created a lightweight implementation of the pioneering transformer architecture that is used to power Large Language Models. Using PyTorch with Cuda support, I integrated the cutting edge technology behind these models, such as self-attention, tokenized word and position encoding, multi-layer perceptrons, and softmax to produce a model that emulated natural language. I then upgraded it with Byte-Pair Encoding, forced regex breaks, and special tokens to further minimize loss and save memory caused by the wastage of excess tokens.</p>
+      </div>
+
       <div class="project">
 	<img src="./imgs/User_Items_Table.png" alt="No Picture" height=150px width=175px align="right" >
         <h3>Movie Reccommendation System <span>(ML/Collaborative Filtering)</span></h3>
@@ -126,16 +134,24 @@
     <div class="section">
       <h2>Work Experience</h2>
       <div class="project">
-        <h3>Class Encore Leader</h3>
-        <p>Sept. 2023 - Present</p>
-	<p style="margin-left:20px">Through working as a Class Encore Leader (Group Tutor/TA), I've had the fulfilling task of facilitating computer science students in acheiving a solid education by creating and hosting group study sessions. Through leading these sessions, I've gained excellent communication skills. Additionally, the responsibility of aiding in visualizing and breaking down complex concepts has benefitted my own understanding of computer science fundamentals.</p>
+        <h3>Data Engineer</h3>
+        <p>June 2025 - Present</p>
+        <p style="margin-left:20px">Since working at Concora Credit, I've collaborated cross-functionally with teams to organize, transform, maintain and provide data in a fast paced environment. Primarily coding in Python and SQL, I've leveraged Databricks' environment for Apache Spark to create data frameworks, automate data pipelines and processes, and perform ad-hoc queries and analysis in a fast-paced working environment.</p>
       </div>
 
+      <div class="project">
+        <h3>Class Encore Leader</h3>
+        <p>Sept. 2023 - June 2025</p>
+	<p style="margin-left:20px">Through working as a Class Encore Leader (Group Tutor/TA), I've had the fulfilling task of facilitating computer science students in acheiving a solid education by creating and hosting group study sessions. Through leading these sessions, I've gained excellent communication skills. Additionally, the responsibility of aiding in visualizing and breaking down complex concepts has benefitted my own understanding of computer science fundamentals.</p>
+      </div>
+      
+      <!--
       <div class="project">
         <h3>Lifeguard & Swim Instructor</h3>
         <p>Summers of 2020, 2021 & 2022</p>
         <p style="margin-left:20px">Working as a lifeguard, I assumed the important duties of enforcing safety regulations, and as a swim instructor, I also was able to apply my swimming experience toward helping beginner and intermediate swimmers develop technical skills. Through being apart of a coordinated team I got a lot of experience in communication and assuming leadership roles within a stressful work environment where this was prioritized. With the priviledge of helping kids and ensuring safety, I happily committed myself towards supporting an efficient and welcoming work environment.</p>
       </div>
+    -->
     </div>
 
     <!-- Resume Section-->
@@ -153,6 +169,13 @@
     <p> Intro. to AI, Algorithms, Operating Systems, Interim. Data Structures, Database Processing, Computer Organization, Discrete Mathematics I->II, Calculus I->III, Computer Science I->III, and Intro. to Web Programming </p>
     <h3>Projects</h3>
      
+    <p><u>Implementation of GPT w/BPE</u> - Python, PyTorch</p>
+    <ul>
+      <li>Constructed and built a Generatively Pre-Trained (GPT) Language Model off Shakespearean text</li>
+      <li>Utilized cutting-edge machine learning models, techniques, and Cuda support to achieve a 2.54 cross-entropy loss</li>
+      <li>Optimized tokenization via Byte-Pair Encoding equipped with strategic regex breaks and optional special tokens</li>
+    </ul>
+
     <p><u>Movie Reccomendation System</u> - Python, Pandas, SciPy</p>
 	<ul>
 	  <li>Approximated existing user ratings, based on ratings of other users with similar tastes</li>
@@ -176,14 +199,22 @@
     
     <h3>Skills</h3>
     <ul>
-      <li><u>Programming</u> - Python, C/C++, SQL, Node.js, Express.js, React, Javascript, HTML, CSS, C#, and Latex</li>
+      <li><u>Programming</u> - Python, C/C++, SQL, Node.js, Express.js, React, Javascript, HTML, CSS, C#, and LaTeX</li>
       <li><u>Operating Systems</u> - Linux/Unix</li>
       <li><u>Mathematics</u> - Discrete Math 2, Calculus 3, Linear Algebra, and Statistics</li>
     </ul>
     <h3>Work Experience</h3>
     <hr></hr>
-      
-        <h3>Class Encore Leader</h3>
+  <h3>Data Engineer</h3>
+  <p>June 2025 - Present</p>
+  <ul>
+    <li>Constructed and deployed an intricate, automated marketing framework for complex multi-touch tent-pole campaigns</li>
+    <li>Automated the generation of multiple business reports, greatly reducing time spent on busy work</li>
+    <li>Delivered and optimized new and historic hot data marts, including via the provision of new features</li>
+  </ul>
+    
+
+  <h3>Class Encore Leader</h3>
 	<p>Sept. 2023 - Present</p>
 	<ul>
 	  <li>Curated weekly sessions and material for students to get hands-on experience with relevant class concepts</li>
@@ -194,7 +225,8 @@
       
 	<h3>Lifeguard & Swim Instructor</h3>
 	<p>Summers of 2020, 2021 & 2022</p>
-	<ul>                                                                                                                      <li>Led a team to exceed operational goals, ensuring the safety and satisfaction of up to 80 patrons</li>
+	<ul>
+    <li>Led a team to exceed operational goals, ensuring the safety and satisfaction of up to 80 patrons</li>
 	    <li>Facilitated clear and effective communication between staff and patrons</li>
           <li>Provided exceptional customer service</li>
         </ul>
